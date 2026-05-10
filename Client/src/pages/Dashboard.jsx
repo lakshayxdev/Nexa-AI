@@ -13,9 +13,7 @@ import Hero from "../components/Hero";
 
 function Dashboard() {
 
-  // =========================
-  // MAIN STATES
-  // =========================
+ 
 
   const [mode, setMode] = useState("analyze");
 
@@ -38,25 +36,7 @@ useEffect(() => {
 
   const [loading, setLoading] = useState(false);
 
-  // const handleNewAnalysis = () => {
-  //   setCode("");
-  //   setResult(null);
-  //   setMode("analyze");
-  //   setLanguage("Javascript");
-  // }
-
-  // const handleClearHistory = () => {
-  //   localStorage.removeItem("history");
-  //   setHistory([]);
-  //   setResult(null);
-  //   setCode("");
-  // }
-
-
-
-  // =========================
-  // AUTH STATES
-  // =========================
+  
 
   const [showAuthModal, setShowAuthModal] = useState(false);
 
@@ -74,21 +54,7 @@ useEffect(() => {
 
 
 
-  // =========================
-  // HISTORY
-  // =========================
 
-  // const [history, setHistory] = useState(() => {
-  //   return JSON.parse(
-  //     localStorage.getItem("history")
-  //   ) || [];
-  // });
-
-
-
-  // =========================
-  // INPUT CHANGE
-  // =========================
 
   const handleChange = (e) => {
 
@@ -101,9 +67,7 @@ useEffect(() => {
 
 
 
-  // =========================
-  // LOGIN / REGISTER
-  // =========================
+ 
 
   const handleAuth = async () => {
 
@@ -140,22 +104,12 @@ useEffect(() => {
       // SAVE USER
       setUser(data.user);
 
-
-
-      // SAVE TO LOCAL STORAGE
       localStorage.setItem(
         "user",
         JSON.stringify(data.user)
       );
 
-
-
-      // CLOSE MODAL
       setShowAuthModal(false);
-
-
-
-      // RESET FORM
       setAuthData({
         name: "",
         email: "",
@@ -176,12 +130,6 @@ useEffect(() => {
   }
 
 };
-
-
-
-  // =========================
-  // ANALYZE
-  // =========================
 
   const handleAnalyze = async () => {
 
@@ -243,7 +191,7 @@ useEffect(() => {
 
 
 
-      // setHistory(updatedHistory);
+      
 
     } catch (error) {
 
@@ -257,19 +205,6 @@ useEffect(() => {
 
   };
 
-
-
-  // =========================
-  // LOGOUT
-  // =========================
-
-  // const handleLogout = () => {
-
-  //   setUser(null);
-
-  //   localStorage.removeItem("user");
-
-  // };
 
 
 
@@ -333,10 +268,7 @@ useEffect(() => {
     </section>
 
 
-      {/* LOADING */}
-      {/* {
-        loading && <LoadingOverlay />
-      } */}
+     
 
 
 
@@ -370,7 +302,6 @@ useEffect(() => {
 
 
 
-              {/* NAME */}
               {
                 !isLogin && (
 
