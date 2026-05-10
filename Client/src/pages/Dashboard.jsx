@@ -110,8 +110,8 @@ useEffect(() => {
   try {
 
     const endpoint = isLogin
-      ? "http://localhost:5000/api/auth/login"
-      : "http://localhost:5000/api/auth/register";
+      ? "https://nexa-ai-kiez.onrender.com/api/auth/login"
+      : "https://nexa-ai-kiez.onrender.com/api/auth/register";
 
 
 
@@ -190,7 +190,7 @@ useEffect(() => {
       setLoading(true);
 
       const res = await fetch(
-        "http://localhost:5000/ask",
+        "https://nexa-ai-kiez.onrender.com/ask",
         {
           method: "POST",
 
