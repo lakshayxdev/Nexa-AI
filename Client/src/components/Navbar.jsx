@@ -6,9 +6,7 @@ function Navbar() {
 
   const location = useLocation();
 
-  // =========================
-  // STATES
-  // =========================
+  
 
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -24,9 +22,7 @@ function Navbar() {
 
 
 
-  // =========================
-  // LOGIN DATA
-  // =========================
+  
 
   const [loginData, setLoginData] = useState({
     email: "",
@@ -35,9 +31,7 @@ function Navbar() {
 
 
 
-  // =========================
-  // REGISTER DATA
-  // =========================
+ 
 
   const [registerData, setRegisterData] = useState({
     name: "",
@@ -47,9 +41,7 @@ function Navbar() {
 
 
 
-  // =========================
-  // CLOSE MOBILE MENU ON ROUTE CHANGE
-  // =========================
+
 
   useEffect(() => {
     setMenuOpen(false);
@@ -57,9 +49,7 @@ function Navbar() {
 
 
 
-  // =========================
-  // LOGIN
-  // =========================
+
 
   const handleLogin = async (e) => {
 
@@ -119,9 +109,7 @@ function Navbar() {
 
 
 
-  // =========================
-  // REGISTER
-  // =========================
+ 
 
   const handleRegister = async (e) => {
 
@@ -182,9 +170,7 @@ function Navbar() {
 
 
 
-  // =========================
-  // LOGOUT
-  // =========================
+ 
 
   const handleLogout = () => {
 
