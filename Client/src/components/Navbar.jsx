@@ -70,7 +70,7 @@ function Navbar() {
       setLoading(true);
 
       const res = await fetch(
-        "http://localhost:5000/api/auth/login",
+        "https://nexa-ai-kiez.onrender.com/api/auth/login",
         {
           method: "POST",
 
@@ -132,7 +132,7 @@ function Navbar() {
       setLoading(true);
 
       const res = await fetch(
-        "http://localhost:5000/api/auth/register",
+        "https://nexa-ai-kiez.onrender.com/api/auth/register",
         {
           method: "POST",
 
